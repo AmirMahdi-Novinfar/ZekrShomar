@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bacj"
+    android:id="@+id/alllay"
+    tools:context="Ir.iamnovinfar.ZekrShomar.ZekrShomar">
+
+
+    <com.adivery.sdk.AdiveryBannerAdView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner_ad_zekr1"
+        android:layout_centerHorizontal="true"
+        app:placement_id="299dbad9-9315-43f6-85bd-715ad450f80a"
+        app:banner_size="banner"/>
+
+
+    <TextView
+        android:id="@+id/zekrcounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/diba"
+        android:gravity="center"
+        android:text="صلوات شماره "
+        android:textColor="@color/white"
+        android:textSize="30sp"></TextView>
+
+    <ImageView
+        android:id="@+id/tsbih"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/zekrcounter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+
+        android:src="@drawable/tsbih"></ImageView>
+
+
+    <Button
+        android:id="@+id/btn_counter"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tsbih"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/hfhtyhjty"
+        android:fontFamily="@font/diba"
+        android:text="ذکر را بشمار"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="150dp"
+        android:textSize="25sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/hfhtyhjty"
+        android:layout_below="@+id/btn_counter"
+        android:fontFamily="@font/diba"
+
+        android:text="شروع مجدد "/>
+
+
+
+
+    <com.adivery.sdk.AdiveryBannerAdView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner_ad_zekr2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:placement_id="575885bd-d691-4433-936e-d420ebf53f8c"
+        app:banner_size="banner"/>
+
+</RelativeLayout>

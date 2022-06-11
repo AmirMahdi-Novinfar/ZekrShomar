@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_back"
+    android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@drawable/uggg"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/idlay"
+        android:background="@drawable/dfsfsdf"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="25dp"
+            android:src="@drawable/ic_verified"
+            android:scaleType="fitXY">
+
+        </ImageView>
+
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="282dp"
+        android:fontFamily="@font/diba"
+        android:hint="نام خود را وارد کنید"
+        android:maxLength="30"
+        android:maxLines="1"
+        android:textColor="@android:color/white"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp">
+
+
+    </EditText>
+
+
+    <com.adivery.sdk.AdiveryBannerAdView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner_ad"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edt_name"
+        android:layout_marginTop="80dp"
+        app:placement_id="299dbad9-9315-43f6-85bd-715ad450f80a"
+        app:banner_size="banner"/>
+
+    <com.adivery.sdk.AdiveryBannerAdView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner_ad2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/banner_ad"
+        android:layout_marginTop="20dp"
+        app:placement_id="2cd6d304-e287-43da-a7da-4dcf9746c58e"
+        app:banner_size="banner"/>
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/hfhtyhjty"
+        android:fontFamily="@font/diba"
+        android:layout_alignParentBottom="true"
+        android:text="ورود به برنامه"
+        android:layout_marginBottom="30dp"
+        android:textSize="17sp">
+
+    </Button>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="15dp"
+        android:layoutDirection="rtl"
+
+        android:textDirection="rtl" />
+
+
+
+</RelativeLayout>
